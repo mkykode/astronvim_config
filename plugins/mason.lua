@@ -36,6 +36,7 @@ return {
       if not opts.ensure_installed then opts.ensure_installed = {} end
       require("astronvim.utils").list_insert_unique(opts.ensure_installed, {
         "prettierd",
+        "prettier_eslint",
         "eslint_d",
         "stylua",
         "rustfmt",

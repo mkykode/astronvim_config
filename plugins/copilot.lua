@@ -12,6 +12,7 @@ return {
             accept = "<Tab>",
           },
         },
+        copilot_node_command = "/usr/local/bin/node", -- Node.js version must be > 16.x
       }
     end,
   },
