@@ -24,6 +24,8 @@ return {
         "tailwindcss",
         "lemminx",
         "yamlls",
+        "pyright",
+        "theme_check",
       })
     end,
   },
@@ -36,13 +38,13 @@ return {
       if not opts.ensure_installed then opts.ensure_installed = {} end
       require("astronvim.utils").list_insert_unique(opts.ensure_installed, {
         "prettierd",
-        "prettier_eslint",
-        "eslint_d",
+        -- "prettier_eslint",
+        -- "eslint_d",
         "stylua",
         "rustfmt",
         "phpcbf",
-        "phpcsfixer",
-        "gofmt",
+        "php-cs-fixer",
+        -- "gofumpt",
       })
     end,
   },
@@ -54,10 +56,14 @@ return {
       if not opts.ensure_installed then opts.ensure_installed = {} end
       require("astronvim.utils").list_insert_unique(opts.ensure_installed, {
         -- "python",
-        "chrome",
-        "php",
-        "bash",
-        "js",
+        -- "chrome",
+        -- "php",
+        -- "bash",
+        -- "js",
+        "chrome-debug-adapter",
+        "js-debug-adapter",
+        "php-debug-adapter",
+        "node-debug2-adapter",
       })
     end,
   },

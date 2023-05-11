@@ -21,8 +21,9 @@ return {
     -- this is useful for naming menus
     -- this is useful for naming menus
     -- quick save
-    ["<C-s>"] = { ":w!<cr>", desc = "Save File" }, -- change description but the same command
-    ["<C-q>"] = { ":wq!<cr>", desc = "Save and Quit" },
+    ["<C-s>"] = { ":w!<CR>", desc = "Save File" }, -- change description but the same command
+    ["<C-q>"] = { ":wq!<CR>", desc = "Save and Quit" },
+    ["p"] = { '"_dP', desc = "Paste without copy" },
   },
   t = {
     -- setting a mapping to false will disable it
