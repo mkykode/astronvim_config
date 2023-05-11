@@ -62,4 +62,48 @@ return {
       },
     },
   },
+  {
+    "microsoft/vscode-js-debug",
+    opt = true,
+    run = "npm install --legacy-peer-deps && npx gulp vsDebugServerBundle && mv dist out",
+  },
+  -- {
+  --   "mxsdev/nvim-dap-vscode-js",
+  --   requires = { "mfussenegger/nvim-dap" },
+  --   config = function(config)
+  --     config.dap.adapters.vscode = {
+  --       type = "executable",
+  --       command = "node",
+  --       args = { os.getenv "HOME" .. "~/.local/share/nvim/mason/packages/chrome-debug-adapter/out/src/chromeDebug.js" },
+  --     }
+  --
+  --     config.dap.configurations.javascript = {
+  --       {
+  --         type = "vscode",
+  --         request = "launch",
+  --         program = "${file}",
+  --         cwd = vim.fn.getcwd(),
+  --         sourceMaps = true,
+  --         protocol = "inspector",
+  --         console = "integratedTerminal",
+  --       },
+  --     }
+  --   end,
+  -- },
+
+  -- {
+  --   "mfussenegger/nvim-dap",
+  --   config = function()
+  --     local dap = require("dap")
+  --     require("dapui").setup()
+  --     require("dapui").open()
+  --     dap.adapters.chrome = {
+  --       type = "executable",
+  --       command = "node",
+  --       args = { os.getenv("HOME") .. "",
+  --       },
+  --     }
+  --
+  --   end,
+  -- },
 }

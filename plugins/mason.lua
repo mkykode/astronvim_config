@@ -57,6 +57,7 @@ return {
         "chrome",
         "php",
         "bash",
+        "js",
       })
     end,
   },
