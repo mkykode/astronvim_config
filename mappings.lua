@@ -25,6 +25,10 @@ return {
     ["<C-q>"] = { ":wq!<CR>", desc = "Save and Quit" },
     ["p"] = { '"_dP', desc = "Paste without copy" },
   },
+  v = {
+    ["K"] = { ":m '<-2<CR>gv=gv", desc = "Move line up" },
+    ["J"] = { ":m '>+1<CR>gv=gv", desc = "Move line down" },
+  },
   t = {
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
