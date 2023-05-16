@@ -23,7 +23,7 @@ return {
     -- quick save
     ["<C-s>"] = { ":w!<CR>", desc = "Save File" }, -- change description but the same command
     ["<C-q>"] = { ":wq!<CR>", desc = "Save and Quit" },
-    ["p"] = { '"_dP', desc = "Paste without copy" },
+    -- ["p"] = { '"_dP', desc = "Paste without copy" },
   },
   v = {
     ["K"] = { ":m '<-2<CR>gv=gv", desc = "Move line up" },

@@ -63,15 +63,17 @@ return {
     },
   },
   {
+    "nvim-treesitter/nvim-treesitter",
+    "nvim-treesitter/nvim-treesitter-context",
+  },
+  {
     "microsoft/vscode-js-debug",
     opt = true,
     run = "npm install --legacy-peer-deps && npx gulp vsDebugServerBundle && mv dist out",
   },
-  {
-    "nvim-treesitter/nvim-treesitter",
-    "nvim-treesitter/nvim-treesitter-context",
-  },
+  { "mxsdev/nvim-dap-vscode-js", requires = { "mfussenegger/nvim-dap" } },
   -- {
+  --
   --   "mxsdev/nvim-dap-vscode-js",
   --   requires = { "mfussenegger/nvim-dap" },
   --   config = function(config)

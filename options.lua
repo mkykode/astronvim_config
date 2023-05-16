@@ -6,7 +6,17 @@ return {
     number = true, -- sets vim.opt.number
     spell = false, -- sets vim.opt.spell
     signcolumn = "auto", -- sets vim.opt.signcolumn to auto
-    wrap = false, -- sets vim.opt.wrap
+    listchars = {
+      tab = "→ ",
+      extends = "⟩",
+      precedes = "⟨",
+      trail = "·",
+      nbsp = "␣",
+      eol = "↲",
+    },
+    wrap = true, -- sets vim.opt.wrap
+    showbreak = "↳ ", -- sets vim.opt.showbreak
+    guifont = "FiraCode Nerd Font:h12",
   },
   g = {
     mapleader = " ", -- sets vim.g.mapleader

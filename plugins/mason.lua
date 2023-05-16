@@ -57,13 +57,9 @@ return {
       require("astronvim.utils").list_insert_unique(opts.ensure_installed, {
         -- "python",
         -- "chrome",
-        -- "php",
-        -- "bash",
-        -- "js",
-        "chrome-debug-adapter",
-        "js-debug-adapter",
-        "php-debug-adapter",
-        "node-debug2-adapter",
+        "php",
+        "bash",
+        "js",
       })
     end,
   },
