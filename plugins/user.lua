@@ -26,13 +26,13 @@ return {
   },
   {
     "folke/todo-comments.nvim",
-    requires = "nvim-lua/plenary.nvim",
+    dependencies = "nvim-lua/plenary.nvim",
     event = "VeryLazy",
     config = function() require("todo-comments").setup {} end,
   },
   {
     "folke/trouble.nvim",
-    requires = "nvim-tree/nvim-web-devicons",
+    dependencies = "nvim-tree/nvim-web-devicons",
     config = function() require("trouble").setup {} end,
   },
   {
