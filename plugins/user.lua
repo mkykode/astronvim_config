@@ -53,6 +53,9 @@ return {
     end,
   },
   {
+    "navarasu/onedark.nvim",
+  },
+  {
     "nvim-neo-tree/neo-tree.nvim",
     opts = {
       filesystem = {

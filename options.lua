@@ -16,7 +16,7 @@ return {
     },
     wrap = true, -- sets vim.opt.wrap
     showbreak = "↳ ", -- sets vim.opt.showbreak
-    guifont = "FiraCode Nerd Font:h12",
+    guifont = "FiraMono Nerd Font:h12",
   },
   g = {
     mapleader = " ", -- sets vim.g.mapleader

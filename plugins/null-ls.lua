@@ -4,7 +4,9 @@ return {
     -- config variable is the default configuration table for the setup function call
     local null_ls = require "null-ls"
 
-    config.timeout = 30000 -- 30 seconds
+    null_ls.setup {
+      timeout_ms = 1000,
+    }
     -- Check supported formatters and linters
     -- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/formatting
     -- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/diagnostics
