@@ -19,15 +19,6 @@ return {
       }
     end,
   },
-  -- {
-  --   "Wansmer/treesj",
-  --   keys = { "<space>m", "<space>j", "<space>s" },
-  --   dependencies = { "nvim-treesitter/nvim-treesitter" },
-  --   config = function()
-  --     require("treesj").setup { --[[ your config ]]
-  --     }
-  --   end,
-  -- },
   {
     "kevinhwang91/nvim-bqf",
     event = "VeryLazy",
@@ -56,6 +47,9 @@ return {
     "navarasu/onedark.nvim",
   },
   {
+    "Mofiqul/dracula.nvim",
+  },
+  {
     "nvim-neo-tree/neo-tree.nvim",
     opts = {
       filesystem = {
@@ -69,50 +63,4 @@ return {
     "nvim-treesitter/nvim-treesitter",
     "nvim-treesitter/nvim-treesitter-context",
   },
-  {
-    "microsoft/vscode-js-debug",
-    opt = true,
-    run = "npm install --legacy-peer-deps && npx gulp vsDebugServerBundle && mv dist out",
-  },
-  { "mxsdev/nvim-dap-vscode-js", requires = { "mfussenegger/nvim-dap" } },
-  -- {
-  --
-  --   "mxsdev/nvim-dap-vscode-js",
-  --   requires = { "mfussenegger/nvim-dap" },
-  --   config = function(config)
-  --     config.dap.adapters.vscode = {
-  --       type = "executable",
-  --       command = "node",
-  --       args = { os.getenv "HOME" .. "~/.local/share/nvim/mason/packages/chrome-debug-adapter/out/src/chromeDebug.js" },
-  --     }
-  --
-  --     config.dap.configurations.javascript = {
-  --       {
-  --         type = "vscode",
-  --         request = "launch",
-  --         program = "${file}",
-  --         cwd = vim.fn.getcwd(),
-  --         sourceMaps = true,
-  --         protocol = "inspector",
-  --         console = "integratedTerminal",
-  --       },
-  --     }
-  --   end,
-  -- },
-
-  -- {
-  --   "mfussenegger/nvim-dap",
-  --   config = function()
-  --     local dap = require("dap")
-  --     require("dapui").setup()
-  --     require("dapui").open()
-  --     dap.adapters.chrome = {
-  --       type = "executable",
-  --       command = "node",
-  --       args = { os.getenv("HOME") .. "",
-  --       },
-  --     }
-  --
-  --   end,
-  -- },
 }
