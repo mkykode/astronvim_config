@@ -63,4 +63,14 @@ return {
     "nvim-treesitter/nvim-treesitter",
     "nvim-treesitter/nvim-treesitter-context",
   },
+  {
+    "nvim-telescope/telescope-media-files.nvim",
+    event = "VeryLazy",
+    dependencies = {
+      "nvim-lua/popup.nvim",
+      "nvim-lua/plenary.nvim",
+      "nvim-telescope/telescope.nvim",
+    },
+    config = function() require("telescope").load_extension "media_files" end,
+  },
 }
