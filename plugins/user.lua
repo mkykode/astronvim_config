@@ -45,6 +45,15 @@ return {
   },
   {
     "navarasu/onedark.nvim",
+    config = function()
+      require("onedark").setup {
+        -- your configuration comes here
+        -- or leave it empty to use the default settings
+        -- refer to the configuration section below
+        style = "cool", -- Default theme style. Choose between 'dark', 'darker', 'cool', 'deep', 'warm', 'warmer' and 'light'
+        toggle_style_key = "<leader>ts",
+      }
+    end,
   },
   {
     "Mofiqul/dracula.nvim",
@@ -62,15 +71,5 @@ return {
   {
     "nvim-treesitter/nvim-treesitter",
     "nvim-treesitter/nvim-treesitter-context",
-  },
-  {
-    "nvim-telescope/telescope-media-files.nvim",
-    event = "VeryLazy",
-    dependencies = {
-      "nvim-lua/popup.nvim",
-      "nvim-lua/plenary.nvim",
-      "nvim-telescope/telescope.nvim",
-    },
-    config = function() require("telescope").load_extension "media_files" end,
   },
 }
