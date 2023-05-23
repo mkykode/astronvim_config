@@ -39,7 +39,7 @@ return {
     "loctvl842/monokai-pro.nvim",
     config = function()
       require("monokai-pro").setup {
-        filter = "pro", -- classic | octagon | pro | machine | ristretto | spectrum
+        filter = "machine", -- classic | octagon | pro | machine | ristretto | spectrum
       }
     end,
   },
@@ -52,6 +52,10 @@ return {
         -- refer to the configuration section below
         style = "dark", -- Default theme style. Choose between 'dark', 'darker', 'cool', 'deep', 'warm', 'warmer' and 'light'
         toggle_style_key = "<leader>ts",
+        -- highlights: {
+        --     Normal = { fg = "#282a35" },
+        --     Comment = { fg = "#595d68" },
+        -- }
       }
     end,
   },
